@@ -1,0 +1,146 @@
+/* Trident (IE11 / Edge IE mode) only — modern browsers never match this media
+   query. IE has no var(), flex gap, fit-content, min()/max(), or module
+   scripts. Literal values mirror the tokens in src/styles/global.css. */
+@media all and (-ms-high-contrast: none), all and (-ms-high-contrast: active) {
+  body {
+    font-family: 'Poppins', Arial, sans-serif;
+  }
+
+  /* IE shrinks body's flex children below their content (no min-height:auto),
+     making the footer ride up over the page. */
+  body > * {
+    flex-shrink: 0;
+  }
+
+  .bandwidth-h,
+  .contact-heading,
+  .faq-title,
+  .legal-title,
+  .press-title {
+    font-size: 5.4rem;
+    letter-spacing: -1.5px;
+    line-height: 1.08;
+  }
+
+  .press-heading {
+    font-size: 4rem;
+    letter-spacing: -1px;
+  }
+
+  .bandwidth-answer,
+  .qa-a,
+  #contact-feedback {
+    font-size: 1.6rem;
+    line-height: 1.65;
+    letter-spacing: 0.2px;
+  }
+
+  /* IE measures ch as the bare "0" glyph, so 62ch comes out too narrow.
+     62 × Poppins zero advance at 16px ≈ 620px. */
+  .bandwidth-answer {
+    max-width: 620px !important;
+  }
+
+  .field input,
+  .field textarea,
+  #contact-submit {
+    font-family: inherit;
+    font-size: 1.6rem;
+  }
+
+  .req,
+  #contact-feedback.is-error {
+    color: #fc4366;
+  }
+
+  /* Only renders where a scoped/legacy sheet sets content on the pseudo. */
+  body::before,
+  .contact-container::before,
+  .press-container::before {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.35) 0%,
+      rgba(0, 0, 0, 0.45) 45%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+  }
+
+  /* No flex gap: space the partner logos with margins instead. */
+  .bandwidth-partners .partner-link {
+    margin: 9px 16px;
+  }
+
+  /* IE can't derive an SVG's width from its viewBox ratio, so width:auto
+     missizes the logos. Desktop heights × each file's viewBox ratio. */
+  .bandwidth-partners img[alt='Repocket'] {
+    width: 160px !important;
+    height: 38px !important;
+  }
+
+  .bandwidth-partners img[alt='Honeygain'] {
+    width: 233px !important;
+    height: 38px !important;
+  }
+
+  .bandwidth-partners img[alt='Live Proxies'] {
+    width: 170px !important;
+    height: 38px !important;
+  }
+
+  .bandwidth-partners img[alt='Infatica'] {
+    width: 131px !important;
+    height: 38px !important;
+  }
+
+  .bandwidth-partners img[alt='Cash Raven'] {
+    width: 147px !important;
+    height: 44px !important;
+  }
+
+  .bandwidth-partners img[alt='anyIP'] {
+    width: 78px !important;
+    height: 48px !important;
+  }
+
+  .bandwidth-partners img[alt='SOAX'] {
+    width: 157px !important;
+    height: 32px !important;
+  }
+
+  .bandwidth-partners img[alt='Massive'] {
+    width: 263px !important;
+    height: 30px !important;
+  }
+
+  /* Accordion JS never runs, so keep every answer expanded. */
+  .qa-a-wrap {
+    max-height: none;
+  }
+
+  .qa-q {
+    font-size: 1.8rem;
+    cursor: default;
+  }
+
+  .qa-q svg {
+    display: none;
+  }
+
+  /* Dropdown JS never runs. */
+  #lang-selector {
+    display: none !important;
+  }
+
+  /* background-clip: text unsupported — gradient would paint as a box. */
+  .carousel-num {
+    background: none;
+  }
+
+  .hero .main-heading {
+    font-size: 7em;
+  }
+
+  .hero-label {
+    font-size: 2.4rem;
+  }
+}

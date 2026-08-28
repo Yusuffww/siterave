@@ -1,0 +1,1 @@
+import{r as p}from"./consent-links.CVd5E7yP.js";document.querySelectorAll("a[data-cookie-policy]").forEach(i=>i.addEventListener("click",o=>{const e=window._iub?.cs?.api;typeof e?.showCP=="function"&&(o.preventDefault(),e.showCP())}));p("a[data-cookie-policy]",["gdprApplies","fadpApplies","usprApplies"]);

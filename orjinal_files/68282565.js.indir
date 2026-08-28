@@ -1,0 +1,8 @@
+_iub.csRC = { consApiKey: 'P0ohXwhlMcmw8oWXQnY3swUI6eGnvnW7', consentDatabasePublicKey: 'ycF2tdRfUeAl8FllFPKr9jeWXAZL6UtC', showBranding: true, publicId: 'eaf3215a-af9d-47f4-a3d8-275a8eed94e2', floatingGroup: false };
+_iub.csEnabled = true;
+_iub.csPurposes = [4,5,1,3];
+_iub.cpUpd = 1787083006;
+_iub.csT = 0.15;
+_iub.googleConsentModeV2 = true;
+_iub.totalNumberOfProviders = 5;
+_iub.csSiteConf = {"askConsentAtCookiePolicyUpdate":true,"countryDetection":true,"emailMarketing":{"theme":"dark"},"enableFadp":true,"enableLgpd":true,"enableUspr":true,"floatingPreferencesButtonDisplay":"bottom-right","lang":"en","lgpdAppliesGlobally":false,"perPurposeConsent":true,"siteId":4528855,"storage":{"useSiteId":true},"whitelabel":true,"cookiePolicyId":68282565,"banner":{"acceptButtonDisplay":true,"closeButtonDisplay":false,"customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"ownerName":"rave.io","position":"float-top-center","rejectButtonDisplay":true,"showTitle":false,"showTotalNumberOfProviders":true}};
